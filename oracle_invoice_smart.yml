@@ -1,0 +1,28 @@
+steps:
+  - type: navigate
+    url: "https://your-fusion-instance.oraclecloud.com"
+  - type: click
+    role: "button"
+    name_contains: "Navigator"
+  - type: click
+    text: "Payables"
+  - type: click
+    text: "Invoices"
+  - type: click
+    text_contains: "Create Invoice"
+  - type: type
+    value: "INV-1001"
+    role: "textbox"
+    name_contains: "Invoice"
+  - type: type
+    value: "Acme Supplies"
+    role: "textbox"
+    name_contains: "Supplier"
+  - type: type
+    value: "5000"
+    role: "textbox"
+    name_contains: "Amount"
+  - type: click
+    text_contains: "Save"
+  - type: screenshot
+    path: "./out/invoice_created.png"

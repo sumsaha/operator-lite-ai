@@ -1,0 +1,16 @@
+- action: goto
+  url: "https://example.com/login"
+
+- action: fill
+  target: "input[name='username']"
+  value: "demo_user"
+
+- action: fill
+  target: "input[name='password']"
+  value: "demo_pass"
+
+- action: click
+  target: "button[type='submit']"
+
+- action: wait
+  seconds: 2
